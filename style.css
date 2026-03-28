@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+.container{
+    display: flex;
+}
+
+.side-image{
+    width: 45%;
+}
+
+.first-section{
+    height: 200px;
+    align-content: center;
+    padding-left: 30px;
+    padding-right: 210px;
+}
+
