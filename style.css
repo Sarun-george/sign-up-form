@@ -1,26 +1,102 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-img {
-  width: 100%;
-  display: block;
-}
-
-.container{
+* { margin: 0; padding: 0; box-sizing: border-box; }
+ 
+img { width: 100%; height: 100%; display: block; }
+ 
+h2 { padding-top: 15px; }
+ 
+.container { display: flex; }
+ 
+.side-image { width: 45%; position: relative; }
+ 
+.image-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-family: system-ui;
+    letter-spacing: 6px;
     display: flex;
+    flex-direction: row;      /* logo and text side by side */
+    align-items: center;
+    gap: 10px;
+    background-color: rgba(0, 0, 0, 0.45);  /* semi-transparent dark bar */
+    padding: 12px 24px;
+    width: 100%;              /* stretch full width of image */
+    justify-content: center;
 }
-
-.side-image{
-    width: 45%;
+ 
+.image-logo img {
+    width: 80px;
+    height: 80px;
 }
-
-.first-section{
-    height: 200px;
-    align-content: center;
+ 
+.first-section {
+    background-color: whitesmoke;
+    height: 235px;
+    padding-right: 115px;
     padding-left: 30px;
-    padding-right: 210px;
+    align-content: center;
+    font-size: x-large;
+    font-family: system-ui;
+    font-weight: bold;
 }
-
+ 
+.second-sentence { padding-top: 25px; }
+ 
+.second-section {
+    height: 245px;
+    padding-left: 30px;
+    padding-right: 420px;
+    font-family: system-ui;
+}
+ 
+.row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px 40px;
+    font-size: small;
+}
+ 
+input {
+    height: 25px;
+    border: 2px solid #000;
+    border-radius: 5px;
+}
+ 
+input:user-invalid { border-color: red; }
+input:user-valid { border-color: green; }
+input:focus {
+    border-color: blue;
+    outline: none;
+     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);  /* removes the default browser outline */
+}
+ 
+.third-section {
+    height: 249px;
+    background-color: whitesmoke;
+    padding-left: 30px;
+    padding-top: 45px;
+    font-family: system-ui;
+}
+ 
+.third-section button {
+    height: 35px;
+    width: 130px;
+    border-radius: 5px;
+    background-color: forestgreen;
+    color: white;
+    font-weight: bold;
+    border-style: hidden;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+ 
+.third-section p { padding-top: 15px; }
+ 
+.third-section a {
+    color: forestgreen;
+    font-weight: bold;
+    text-decoration: none;
+}
